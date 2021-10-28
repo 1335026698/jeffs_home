@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type = "text/javascript">
+        function nametest(){
+            var name = document.getElementById("username");
+            if(name.value.length==0)
+            {
+                alert("用户名为空，请重新输入");
+            }
+            var password = document.getElementById("userpassword");
+            if(password.value.length==0)
+            {
+                alert("密码为空，请重新输入");
+            }
+        }
+        function test(){
+            alert(1);
+        }
+    </script>
+</head>
+<!--
+    h1为第一标题，首页元素全部采用居中格式
+    图片下方设置table以规范元素格式
+    在table中插入两个html链接，分别是登录、注册，实现用户点击即可跳转至相关页面的操作
+    设置一个iframe，name设置为gk，长宽设定为300，下方href的target设置成和name相同
+    并链接至国科官网
+-->
+<body align = "center">    
+
+    <h1 style = color:white;background-color:blue;>欢迎来到登录界面</h1>
+    <form>
+        <table align = "center">
+            <tr>
+                <td>用户名</td>
+                <td>
+                    <input type = "text" id = "username">
+                </td>
+            </tr>
+
+            <tr>
+                <td>密码</td>
+                <td>
+                    <input type = "password" id = "userpassword">
+                </td>
+            </tr>
+            
+            
+        </table>
+        <input type = "submit" id = "login" value = "登陆" onclick = "nametest()">
+        <input type = "reset" id = "reset" value = "重置">
+
+    </form>
+
+    <a href = "homepage.html" method = "POST">
+        <input type = "submit" id = "return" value = "返回">
+    </a>
+
+    <a href = "test.html" method = "GET">
+        <input type = "submit" value = "php">
+    </a>
+<br>
+
+
+
+
+</body>
+</html>

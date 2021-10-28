@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+    h1为第一标题，首页元素全部采用居中格式
+    图片下方设置table以规范元素格式
+    在table中插入两个html链接，分别是登录、注册，实现用户点击即可跳转至相关页面的操作
+    设置一个iframe，name设置为gk，长宽设定为300，下方href的target设置成和name相同
+    并链接至国科官网
+-->
+<body align = "center">
+    <h1 style = color:white;background-color:blue>欢迎来到注册界面</h1>
+    <form method = "POST" action = "login.html">
+        <table align = "center" border = "10">       
+            <tr>
+                <td>新用户名</td>
+                <td>
+                    <input type = "text" id = "newusername">
+                </td>
+            </tr>
+    
+            <tr>
+                <td>新密码</td>
+                <td>
+                    <input type = "password" id = "newuserpassword">
+                </td>
+            </tr>
+    
+            <tr>
+                <td>确认密码</td>
+                <td>
+                    <input type = "password" id = "surenewuserpassword">
+                </td>
+            </tr>
+
+            <tr>
+                <td>性别</td>
+                <td>
+                    男<input type = "radio" id = "sex" value = "boy">
+                    女<input type = "radio" id = "sex" value = "girl">
+                </td>
+            </tr>
+
+            <tr>
+                <td>生源地</td>
+                <td>
+                    <select>
+                        <optgroup label = "集美区">
+                            <option>银亭路</option>
+                            <option>浔江路</option>
+                            <option>银江路</option>
+                        </optgroup>
+                        <optgroup label = "湖里区">
+                            <option>xx路</option>
+                            <option>xx路</option>
+                            <option>xx路</option>
+                        </optgroup>
+                    </select>    
+                </td>
+            </tr>
+
+            <tr>
+                <td>爱好</td>
+                <td>
+                    睡觉<input type = "checkbox" id = "love" name = "睡觉">
+                    吃饭<input type = "checkbox" id = "love" name = "吃饭">
+                    吹牛<input type = "checkbox" id = "love" name = "吹牛">
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>个人说明</td>
+                <td>
+                    <textarea clos = 10 rows = 5 maxlength = "10">（最多十字）</textarea>
+                </td>
+            </tr>
+        </table>
+
+        <table align = "center">
+            <td>
+                <a href = "ligin.html">
+                    <input type = "submit" value = "登陆">
+
+                </a>
+            </td>
+
+            <td>
+                <input type = "reset" value = "重置">
+            </td>
+        </table>
+    </form>
+    <a href = "homepage.html" method = "POST">
+        <input type = "submit" value = "返回首页">
+    </a>
+
+
+
+</body>
+</html>

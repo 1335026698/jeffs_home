@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+    h1为第一标题，首页元素全部采用居中格式
+    图片下方设置table以规范元素格式
+    在table中插入两个html链接，分别是登录、注册，实现用户点击即可跳转至相关页面的操作
+    设置一个iframe，name设置为gk，长宽设定为300，下方href的target设置成和name相同
+    并链接至国科官网
+-->
+<body>
+    <h1 align = center>欢迎来到Jeff的家</h1>
+    <center>
+        <img src="1.gif">
+        <table align = "center">
+            <tr>
+                <td>
+                    <a href = "login.html" method = "POST">
+                        <input type = "submit" value = "登陆" id = "login">
+                    
+                </td>
+
+                <td>
+                    <a href = "register.html" method = "POST">
+                        <input type = "submit" value = "注册" id = "register">
+                </td>
+            </tr>
+            <br>
+            <iframe name = "gk" width = "300" height = "300"></iframe>
+            <br>
+            <a href="https://edu.goktech.cn/" target="gk">国科官网</a>
+        </table>
+    </center>
+
+
+
+</body>
+</html>
